@@ -8,5 +8,4 @@
 - git push origin master  (再去push一下要上传的文件) 
 - git pull origin master 更新代码
 - git branch -b `分支名` 创建并跳转到当前分支
-- git kddf
 - git checkout `分支名` ahhahahaha
