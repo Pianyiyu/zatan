@@ -1,9 +1,11 @@
 package com.zah;
 
+import java.util.AbstractCollection;
+
 public class JumpFloorII {
 
     int jumpFloorII(int number) {
-        sout;
+        AbstractCollection;
 
         if (number == 0)return 0;
         if (number==1) return 1;
