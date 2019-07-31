@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1558be44-3798-48ec-9989-16fc7f7fc777" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/com/zah/KMP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/zah/KMP.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/zah/Islands.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,17 +16,7 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/zah/KMP.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="15" column="19" lean-forward="true" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -69,6 +60,7 @@
         <option value="$PROJECT_DIR$/src/com/zah/RemoveNthFromEnd.java" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/com/zah/KMP.java" />
+        <option value="$PROJECT_DIR$/src/com/zah/Islands.java" />
       </list>
     </option>
   </component>
@@ -130,13 +122,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.RemoveNthFromEnd">
-    <configuration name="InOrderRecursion" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.zah.TreeNode.InOrderRecursion" />
+  <component name="RunManager" selected="Application.Islands">
+    <configuration name="Islands" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.zah.Islands" />
       <module name="code" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.zah.TreeNode.*" />
+          <option name="PATTERN" value="com.zah.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -197,19 +189,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.InOrderRecursion" />
       <item itemvalue="Application.NIOClient" />
       <item itemvalue="Application.NIOServer" />
       <item itemvalue="Application.NioTest" />
       <item itemvalue="Application.RemoveNthFromEnd" />
+      <item itemvalue="Application.Islands" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Islands" />
         <item itemvalue="Application.RemoveNthFromEnd" />
         <item itemvalue="Application.NioTest" />
         <item itemvalue="Application.NIOClient" />
         <item itemvalue="Application.NIOServer" />
-        <item itemvalue="Application.InOrderRecursion" />
       </list>
     </recent_temporary>
   </component>
@@ -238,13 +230,12 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55254000" />
+    <option name="totallyTimeSpent" value="58162000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20628998" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20628998" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -609,10 +600,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/zah/Islands.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1050">
+          <caret line="42" column="22" lean-forward="true" selection-start-line="42" selection-start-column="22" selection-end-line="42" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/zah/KMP.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="15" column="19" lean-forward="true" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+        <state relative-caret-position="268">
+          <caret line="21" column="21" lean-forward="true" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
         </state>
       </provider>
     </entry>
