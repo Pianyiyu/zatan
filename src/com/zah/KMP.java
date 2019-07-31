@@ -2,50 +2,49 @@ package com.zah;
 
 public class KMP {
     public static void main(String[] args) {
-        // TODO Auto-generated method stub
-
-        String str = "abababdafdasabcfdfeaba";
-        String pattern = "abc";
-        System.out.println(kmp(str, pattern));
+        String str = "abcabcababaccc";
+        String match = "ababa";
+        System.out.println(getIndexOf(str, match));
     }
 
-    public static void generateNext(String s, int[] next) {
-        int k = -1;
-        int j = 0;
+    public static int getIndexOf(String s, String m) {
+        if (s == null || m == null || m.length() < 1 || s.length() < m.length()) {
+            return -1;
+        }
+        char[] ss = s.toCharArray();
+        char[] ms = m.toCharArray();
+        int si = 0;
+        int mi = 0;
+        int[] next = getNext(m);
+        while (si < ss.length && mi < ms.length) {
+            if (ss[si] == ms[mi]) {
+                si++;
+                mi++;
+            } else if (next[mi] == -1) {
+                si++;
+            } else {
+                mi = next[mi];
+            }
+        }
+        return mi == ms.length ? si - mi : -1;
+    }
+
+    public static int[] getNext(String s) {
+        int[] next = new int[s.length()];
+        char[] chars = s.toCharArray();
         next[0] = -1;
-        while (j < s.length() - 1) {
-            if (k == -1 || next[k] == next[j]) {
-                j++;
-                k++;
-                next[j] = k;
+        next[1] = 0;
+        int pos = 2;
+        int cn = 0;
+        while (pos < s.length()) {
+            if (chars[pos - 1] == chars[cn]) {
+                next[pos++] = ++cn;
+            } else if (cn > 0) {
+                cn = next[cn];
             } else {
-                k = next[k];
+                next[pos++] = 0;
             }
         }
-    }
-    public static int kmp(String s1, String s2) {
-        int s1len = s1.length();
-        int s2len = s2.length();
-        int i = 0;
-        int j = 0;
-        int[] next = new int[s2len];
-        generateNext(s2, next);
-        while (i < s1len && j < s2len) {
-            if (s1.charAt(i) == s2.charAt(j)) {
-                i++;
-                j++;
-            } else {
-                if (next[j] == -1) {
-                    i++;
-                    j = 0;
-                } else {
-                    j = next[j];
-                }
-            }
-            if (j == s2len) {
-                return i - j;
-            }
-        }
-        return -1;
+        return next;
     }
 }
