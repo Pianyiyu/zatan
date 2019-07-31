@@ -9,3 +9,5 @@
 - git pull origin master 更新代码
 - git branch -b `分支名` 创建并跳转到当前分支
 - git checkout `分支名` 切换分支
+- git reflog 获取你自己的commit id
+- git reset --hard HEAD@{`id`} 回到之前提交的id
