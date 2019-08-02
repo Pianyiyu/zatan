@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1558be44-3798-48ec-9989-16fc7f7fc777" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/zah/CombinationSum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/zah/GenerateParenthesis.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/zah/IsValid.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/zah/LetterCombinations.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/code/com/zah/Islands.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/code/com/zah/Islands.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/zah/ZPrintArr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/zah/ZPrintArr.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,7 +16,17 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/zah/ZPrintArr.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="175">
+              <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -41,7 +47,6 @@
         <option value="$PROJECT_DIR$/src/com/zah/EraseOverlapIntervals.java" />
         <option value="$PROJECT_DIR$/src/com/zah/KthGrammar.java" />
         <option value="$PROJECT_DIR$/src/com/zah/CombinationSum2.java" />
-        <option value="$PROJECT_DIR$/src/com/zah/ZPrintArr.java" />
         <option value="$PROJECT_DIR$/src/com/zah/IsBalanced2.java" />
         <option value="$PROJECT_DIR$/src/com/zah/GetLeastNumbers.java" />
         <option value="$PROJECT_DIR$/src/com/zah/util/ListNode.java" />
@@ -69,6 +74,7 @@
         <option value="$PROJECT_DIR$/src/com/zah/GenerateParenthesis.java" />
         <option value="$PROJECT_DIR$/src/com/zah/LetterCombinations.java" />
         <option value="$PROJECT_DIR$/src/com/zah/CombinationSum.java" />
+        <option value="$PROJECT_DIR$/src/com/zah/ZPrintArr.java" />
       </list>
     </option>
   </component>
@@ -86,7 +92,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -109,14 +115,14 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../pangu-gop/pangu-gop-gm" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -236,11 +242,12 @@
       <workItem from="1564398615010" duration="3602000" />
       <workItem from="1564458015948" duration="3450000" />
       <workItem from="1564466623378" duration="16081000" />
+      <workItem from="1564734375846" duration="109000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66718000" />
+    <option name="totallyTimeSpent" value="66827000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -253,8 +260,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21002132" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20202559" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -271,7 +279,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.329718" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.54989153" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.35249457" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.329718" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32936078" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -644,13 +652,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/zah/ZPrintArr.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="472">
-          <caret line="27" column="28" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/zah/LetterCombinations.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="625">
@@ -690,6 +691,13 @@
             <element signature="e#266#267#0" expanded="true" />
             <element signature="e#315#316#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/zah/ZPrintArr.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
         </state>
       </provider>
     </entry>
