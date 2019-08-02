@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1558be44-3798-48ec-9989-16fc7f7fc777" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/zah/Islands.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/zah/CombinationSum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/zah/GenerateParenthesis.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/zah/IsValid.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/zah/LetterCombinations.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/code/com/zah/Islands.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/code/com/zah/Islands.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -61,16 +65,22 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/com/zah/KMP.java" />
         <option value="$PROJECT_DIR$/src/com/zah/Islands.java" />
+        <option value="$PROJECT_DIR$/src/com/zah/IsValid.java" />
+        <option value="$PROJECT_DIR$/src/com/zah/GenerateParenthesis.java" />
+        <option value="$PROJECT_DIR$/src/com/zah/LetterCombinations.java" />
+        <option value="$PROJECT_DIR$/src/com/zah/CombinationSum.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="x" value="398" />
+    <option name="y" value="24" />
+    <option name="width" value="1400" />
+    <option name="height" value="1000" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -106,7 +116,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../pangu-gop/pangu-gop-gm" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -122,9 +132,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Islands">
-    <configuration name="Islands" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.zah.Islands" />
+  <component name="RunManager" selected="Application.CombinationSum">
+    <configuration name="CombinationSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.zah.CombinationSum" />
       <module name="code" />
       <extension name="coverage">
         <pattern>
@@ -136,12 +146,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NIOClient" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.zah.nio.NIOClient" />
+    <configuration name="IsValid" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.zah.IsValid" />
       <module name="code" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.zah.nio.*" />
+          <option name="PATTERN" value="com.zah.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -149,12 +159,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NIOServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.zah.nio.NIOServer" />
+    <configuration name="Islands" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.zah.Islands" />
       <module name="code" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.zah.nio.*" />
+          <option name="PATTERN" value="com.zah.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -189,19 +199,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.NIOClient" />
-      <item itemvalue="Application.NIOServer" />
       <item itemvalue="Application.NioTest" />
       <item itemvalue="Application.RemoveNthFromEnd" />
       <item itemvalue="Application.Islands" />
+      <item itemvalue="Application.IsValid" />
+      <item itemvalue="Application.CombinationSum" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CombinationSum" />
+        <item itemvalue="Application.IsValid" />
         <item itemvalue="Application.Islands" />
         <item itemvalue="Application.RemoveNthFromEnd" />
         <item itemvalue="Application.NioTest" />
-        <item itemvalue="Application.NIOClient" />
-        <item itemvalue="Application.NIOServer" />
       </list>
     </recent_temporary>
   </component>
@@ -230,12 +240,21 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58162000" />
+    <option name="totallyTimeSpent" value="66718000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20628998" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21002132" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -244,15 +263,15 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.29934925" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.2624729" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.21041214" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4815618" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.329718" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.329718" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.5618221" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.54989153" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.329718" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32936078" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -268,6 +287,24 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/zah/IsValid.java</url>
+          <line>36</line>
+          <properties />
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/zah/IsValid.java</url>
+          <line>19</line>
+          <properties />
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/com/zah/MaxAreaOfIsland.java" />
@@ -307,23 +344,6 @@
             <element signature="e#486#487#0" expanded="true" />
             <element signature="e#547#548#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/zah/CombinationSum2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/zah/ZPrintArr.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="5" column="60" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="60" />
         </state>
       </provider>
     </entry>
@@ -611,6 +631,65 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="268">
           <caret line="21" column="21" lean-forward="true" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/zah/CombinationSum2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/zah/ZPrintArr.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="472">
+          <caret line="27" column="28" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/zah/LetterCombinations.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="625">
+          <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/zah/CombinationSum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="29" column="44" lean-forward="true" selection-start-line="29" selection-start-column="44" selection-end-line="29" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/zah/GenerateParenthesis.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#409#417#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/zah/IsValid.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+          <folding>
+            <element signature="e#266#267#0" expanded="true" />
+            <element signature="e#315#316#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
