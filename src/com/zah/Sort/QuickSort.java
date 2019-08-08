@@ -1,12 +1,32 @@
 package com.zah.Sort;
 
+import java.util.concurrent.LinkedBlockingDeque;
+import java.util.concurrent.ThreadFactory;
+import java.util.concurrent.ThreadPoolExecutor;
+import java.util.concurrent.TimeUnit;
+
 public class QuickSort {
     public static void main(String[] args) {
+        ThreadPoolExecutor threadPoolExecutor = new ThreadPoolExecutor(5, 10, 3000, TimeUnit.MILLISECONDS, new LinkedBlockingDeque<>(100));
+        int[] arr = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20};
+        for (int i = 0; i < arr.length; i++) {
+            threadPoolExecutor.execute(() -> {
+                System.out.println(Thread.currentThread().getName());
+                for (int j = 0; j < arr.length; j++) {
+                    try {
+                        Thread.sleep(1000);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                    System.out.println(arr[j]+":"+Thread.currentThread().getName());
+                }
+            });
+        }
 
-        int[] arr = {3, 1, 2, 4, 5,6,0};
-//        sort(arr, 0, arr.length-1);
-        quickSort(arr, 0, arr.length - 1);
-        System.out.println();
+//        int[] arr = {3, 1, 2, 4, 5,6,0};
+////        sort(arr, 0, arr.length-1);
+//        quickSort(arr, 0, arr.length - 1);
+//        System.out.println();
     }
 
     public static void sort(int a[], int low, int hight) {
@@ -51,9 +71,9 @@ public class QuickSort {
                     arr[r--] = arr[l];
                 }
             }
-            arr[l]=index;
-            quickSort(arr, left, l-1);
-            quickSort(arr, l+1, right);
+            arr[l] = index;
+            quickSort(arr, left, l - 1);
+            quickSort(arr, l + 1, right);
         }
     }
 
