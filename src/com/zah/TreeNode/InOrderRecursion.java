@@ -26,7 +26,7 @@ public class InOrderRecursion {
         if (root == null) return;
         while (root != null) {
             inOrderRecursion_dg(root.left);
-            System.out.println(root.value);
+            System.out.println(root.val);
             inOrderRecursion_dg(root.left);
         }
     }
@@ -41,7 +41,7 @@ public class InOrderRecursion {
                     node = node.left;
                 } else {
                     node = stack.pop();
-                    System.out.println(node.value);
+                    System.out.println(node.val);
                     node = node.right;
                 }
             }

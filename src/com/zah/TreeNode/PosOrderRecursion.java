@@ -23,7 +23,7 @@ public class PosOrderRecursion {
                 }
             }
             while (!s2.isEmpty()) {
-                System.out.print(s2.pop().value + " ");
+                System.out.print(s2.pop().val + " ");
             }
         }
         System.out.println();
