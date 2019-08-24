@@ -8,25 +8,27 @@ import java.util.concurrent.TimeUnit;
 public class QuickSort {
     public static void main(String[] args) {
         ThreadPoolExecutor threadPoolExecutor = new ThreadPoolExecutor(5, 10, 3000, TimeUnit.MILLISECONDS, new LinkedBlockingDeque<>(100));
-        int[] arr = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20};
-        for (int i = 0; i < arr.length; i++) {
-            threadPoolExecutor.execute(() -> {
-                System.out.println(Thread.currentThread().getName());
-                for (int j = 0; j < arr.length; j++) {
-                    try {
-                        Thread.sleep(1000);
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
-                    }
-                    System.out.println(arr[j]+":"+Thread.currentThread().getName());
-                }
-            });
-        }
+//        int[] arr = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20};
+//        for (int i = 0; i < arr.length; i++) {
+//            threadPoolExecutor.execute(() -> {
+//                System.out.println(Thread.currentThread().getName());
+//                for (int j = 0; j < arr.length; j++) {
+//                    try {
+//                        Thread.sleep(1000);
+//                    } catch (InterruptedException e) {
+//                        e.printStackTrace();
+//                    }
+//                    System.out.println(arr[j]+":"+Thread.currentThread().getName());
+//                }
+//            });
+//        }
 
-//        int[] arr = {3, 1, 2, 4, 5,6,0};
-////        sort(arr, 0, arr.length-1);
-//        quickSort(arr, 0, arr.length - 1);
-//        System.out.println();
+        int[] arr = {3, 1, 2, 4, 5,6,0};
+//        sort(arr, 0, arr.length-1);
+        qs(arr, 0, arr.length - 1);
+        for (int i = 0; i < arr.length; i++) {
+            System.out.println(arr[i]);
+        }
     }
 
     public static void sort(int a[], int low, int hight) {
@@ -75,6 +77,32 @@ public class QuickSort {
             quickSort(arr, left, l - 1);
             quickSort(arr, l + 1, right);
         }
+    }
+
+    private static void  qs(int[] arr, int left, int right){
+        if (left<right){
+            int l = left;
+            int r = right;
+            int s = arr[left];
+            while (l < r){
+                while (l < r && s <= arr[r]){
+                    r--;
+                }
+                if (l < r){
+                    arr[l] = arr[r];
+                }
+                while (l < r && s > arr[l]){
+                    l++;
+                }
+                if (l < r){
+                    arr[r] = arr[l];
+                }
+            }
+            arr[l] = s;
+            qs(arr , left ,l-1);
+            qs(arr ,l + 1 ,right);
+        }
+
     }
 
 }
