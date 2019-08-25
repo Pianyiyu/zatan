@@ -1,5 +1,8 @@
 package com.zah.Sort;
 
+import java.util.concurrent.CountDownLatch;
+import java.util.concurrent.CyclicBarrier;
+
 public class HeapSort {
     public static void main(String[] args) {
 //        int[] arr = {3, 1, 2, 4, 5, 6, 0};
@@ -12,6 +15,8 @@ public class HeapSort {
         for (int i = 0; i < arr.length; i++) {
             System.out.println(arr[i]);
         }
+//        CountDownLatch;
+//        CyclicBarrier
     }
     public static void sort(int[] arr ,int n){
         build(arr,n);
