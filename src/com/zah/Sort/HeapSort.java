@@ -1,7 +1,10 @@
 package com.zah.Sort;
 
-import java.util.concurrent.CountDownLatch;
-import java.util.concurrent.CyclicBarrier;
+import sun.nio.ch.ThreadPool;
+
+import java.util.HashMap;
+import java.util.concurrent.*;
+import java.util.concurrent.locks.Lock;
 
 public class HeapSort {
     public static void main(String[] args) {
@@ -17,6 +20,22 @@ public class HeapSort {
         }
 //        CountDownLatch;
 //        CyclicBarrier
+//        Future;
+//        Lock;
+//        StringBuffer;
+//        ThreadLocal;
+//        Thread;
+//        HashMap;
+//        ConcurrentHashMap
+        String s1 = "a";
+        String s2 = "b";
+        System.out.println(s1 == s2);
+
+        Integer a = 1;
+        Integer b = 1;
+        Integer c = new Integer(1);
+        Integer d = new Integer(1);
+        System.out.println(a == b);
     }
     public static void sort(int[] arr ,int n){
         build(arr,n);
