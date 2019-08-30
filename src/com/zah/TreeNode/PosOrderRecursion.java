@@ -28,4 +28,28 @@ public class PosOrderRecursion {
         }
         System.out.println();
     }
+
+    public static void pos(TreeNode root){
+
+        if (root != null){
+            Stack<TreeNode> s1 = new Stack<>();
+            Stack<TreeNode> s2 = new Stack<>();
+            s1.push(root);
+            while (!s1.isEmpty()){
+                TreeNode treeNode= s1.pop();
+                s2.push(treeNode);
+                if (treeNode.left != null){
+                    s1.push(treeNode.left);
+                }
+                if (treeNode.right != null){
+                    s1.push(treeNode.right);
+                }
+            }
+            while (!s2.isEmpty()){
+                System.out.println(s2.pop().val);
+            }
+
+        }
+
+    }
 }
